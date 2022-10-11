@@ -12,8 +12,6 @@ export default function NavBar({user, setUser}) {
         <nav>
             <span>Welcome, {user.name}</span>
             &nbsp; | &nbsp;
-            <Link to="/">HomePage</Link>
-            &nbsp; | &nbsp;
             <Link to="/menu">Menu</Link>
             &nbsp; | &nbsp;
             <Link to="/about">Our Story</Link>

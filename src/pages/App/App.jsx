@@ -2,6 +2,7 @@ import './App.css';
 import {useState} from 'react';
 // Import the following components
 import AuthPage from '../AuthPage/AuthPage';
+import HomePage from '../HomePage/HomePage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import MenuPage from '../MenuPage/MenuPage';
 import AboutPage from '../AboutPage/AboutPage';
@@ -21,6 +22,7 @@ function App() {
                 <>
                     <NavBar user={user} setUser={setUser}/>
                     <Routes>
+                        <Route path="/" element={<HomePage/>}/>
                         <Route path="/menu" element={<MenuPage/>}/>
                         <Route path="/about" element={<AboutPage/>}/>
                         <Route path="/orders/new" element={<NewOrderPage/>}/>
