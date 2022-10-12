@@ -49,6 +49,7 @@ export default function Homepage() {
     </div>
 
     <div>
+      <form>
       <h2>Book a table</h2>
     
       <label for="date">Date</label>
@@ -67,6 +68,7 @@ export default function Homepage() {
           <option value="5 people">5 people</option>
           <option value="6 people">6 people</option>
       </select>
+      </form>
   </div>
     </>
   );
