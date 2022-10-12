@@ -7,24 +7,28 @@ export default function NewOrderPage() {
 
   // fetch the menuItems from server via ajax
   useEffect(function () {
-    async function getItems() {
+    async function getItems() { 
+      // get all menu items
       const items = await itemsAPI.getAll();
+      // get all categories of foods 
       categoriesRef.current = items.reduce((cats, item)=> {
+        // get an item from the category
         const cat = item.category.name;
       setMenuItems(items);
+      // return the category, if not, then add a category
       return cats.includes(cat) ? cats : [...cats, cat];
     }, []);
     setMenuItems(items);
   }
-
     getItems();
   }, []);
-  
+
 
   // call setMenuItems to save the state after
 
   return (
     <>
+    
      <h1>Your Order</h1>
      <button onClick={() => setMenuItems(Date.now())}> Trigger re-render</button>
     </>
