@@ -1,53 +1,40 @@
-// http://localhost:3001/api/users
-import {getToken} from "./users-service";
+import {getToken} from './users-service';
 
 // http://localhost:3001/api/items
 const BASE_URL = '/api/items';
 
-//get all items
-export async function getAll() {
-    return sendRequest(BASE_URL); //get method
+// get all items
+export function getAll() {
+    return sendRequest(BASE_URL);
 }
 
-//return a single item
-export async function getById(credentials) {
+// return single item
+export function getById(id) {
     return sendRequest(`${BASE_URL}/${id}`);
 }
 
-//return a single item
 export function checkToken() {
     return sendRequest(`${BASE_URL}/check-token`);
 }
 
+/*--- Helper Functions ---*/
+
 async function sendRequest(url, method = 'GET', payload = null) {
+    // Fetch accepts an options object as the 2nd argument
+    // used to include a data payload, set headers, etc.
     const options = {method};
-    // if you want to send data to the server
     if (payload) {
-        // we must send JSON
-        options.headers = {
-            'Content-Type': 'application/json'
-        };
-        // Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
+        options.headers = {'Content-Type': 'application/json'};
         options.body = JSON.stringify(payload);
     }
-
     const token = getToken();
     if (token) {
         options.headers = options.headers || {};
         options.headers.Authorization = `Bearer ${token}`;
     }
-
-    // tell fetch function to send data to URL with some data
-    // if there is any data
-    // this depends on HTTP methods such as GET OR POST
     const res = await fetch(url, options);
-    // HTTP status code 200, means everything went fine
+    // res.ok will be false if the status code set to 4xx in the controller action
     if (res.ok) return res.json();
-    // https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
     throw new Error('Bad Request');
-}
 
-export function checkToken() {
-    // http://localhost:3001/api/users/check-token
-    return sendRequest(`${BASE_URL}/check-token`);
 }
