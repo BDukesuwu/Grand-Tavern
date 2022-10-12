@@ -14,6 +14,11 @@ export async function getById(credentials) {
     return sendRequest(`${BASE_URL}/${id}`);
 }
 
+//return a single item
+export function checkToken() {
+    return sendRequest(`${BASE_URL}/check-token`);
+}
+
 async function sendRequest(url, method = 'GET', payload = null) {
     const options = {method};
     // if you want to send data to the server
