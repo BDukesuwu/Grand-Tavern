@@ -20,7 +20,7 @@ export default function NavBar({user, setUser}) {
             &nbsp; | &nbsp;
             <Link to="/book">Book a Table</Link>
             &nbsp; | &nbsp;
-            &nbsp;&nbsp; <Link to={""} onClick={handleLogOut}>Logout</Link>
+            <button onClick={handleLogOut}>  Logout </button>
         </nav>
     )
 }
