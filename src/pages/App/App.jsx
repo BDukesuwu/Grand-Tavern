@@ -7,7 +7,6 @@ import HomePage from '../HomePage/HomePage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import MenuPage from '../MenuPage/MenuPage';
 import AboutPage from '../AboutPage/AboutPage';
-import BookingPage from '../BookingPage/BookingPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import {Routes, Route} from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
@@ -41,7 +40,7 @@ function App() {
                         <Route path="/menu" element={<MenuPage/>}/>
                         <Route path="/about" element={<AboutPage/>}/>
                         <Route path="/orders/new" element={<NewOrderPage/>}/>
-                        <Route path="/book" element={<BookingPage/>}/>
+                        <Route path="/book" element={<HomePage />}/>
                         <Route path="/orders" element={<OrderHistoryPage/>}/>
                     </Routes>
                 </>

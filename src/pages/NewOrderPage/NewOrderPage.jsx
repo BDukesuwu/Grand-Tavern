@@ -12,8 +12,8 @@ export default function NewOrderPage() {
       const items = await itemsAPI.getAll();
       // get all categories of foods 
       categoriesRef.current = items.reduce((cats, item)=> {
-        // get an item from the category
-        const cat = item.category.name;
+      // get an item from the category
+      const cat = item.category.name;
       setMenuItems(items);
       // return the category, if not, then add a category
       return cats.includes(cat) ? cats : [...cats, cat];

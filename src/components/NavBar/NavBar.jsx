@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
+import { HashLink } from 'react-router-hash-link';
 
 export default function NavBar({user, setUser}) {
 
@@ -18,7 +19,7 @@ export default function NavBar({user, setUser}) {
             &nbsp; | &nbsp;
             <Link to="/orders/new">Order Page</Link>
             &nbsp; | &nbsp;
-            <Link to="/book">Book a Table</Link>
+            <HashLink smooth to="/#booking">Book a Table</HashLink>
             &nbsp; | &nbsp;
             <button onClick={handleLogOut} type="button" className="btn btn-dark">Logout</button>
         </nav>

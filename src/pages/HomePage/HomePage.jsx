@@ -47,7 +47,7 @@ export default function Homepage() {
             <img src={nutrition} />
     </div>
 
-    <div>
+    <div id="booking">
       <form>
       <h2>Book a table</h2>
     
