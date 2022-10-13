@@ -20,8 +20,7 @@ export default function Homepage() {
 
     <div>
       <h2> Always Fresh</h2>
-      <p> Fresh steak
-          Lorem ipsum dolor sit amet,
+      <p> Lorem ipsum dolor sit amet,
           consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Urna molestie at elementum eu facilisis
@@ -59,8 +58,8 @@ export default function Homepage() {
       <input type="time" name="book"/>
       <input type="submit"/>
     
-      <select>
       <label for="book">Party Size</label>
+      <select>
           <option value="1 person">1 person</option>
           <option value="2 people">2 people</option>
           <option value="3 people">3 people</option>
