@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef } from 'react'; // import these functions
 import * as itemsAPI from '../../utilities/items.api' //import all functions from here
 import { Link } from 'react-router-dom';
+import MenuList from '../../components/MenuList/MenuList';
 
 export default function NewOrderPage() {
   const [menuItems, setMenuItems] = useState([]); //important when using api
+  const [activeCat, setActiveCat] = useState('');
   const categoriesRef = useRef([]); // create and init the red to an empty array
 
   // fetch the menuItems from server via ajax
@@ -20,9 +22,10 @@ export default function NewOrderPage() {
       return cats.includes(cat) ? cats : [...cats, cat];
     }, []);
     setMenuItems(items);
+    setActiveCat(categoriesRef.current[0]);
   }
     getItems();
-  }, []);
+  }, []); // empty dependency array to run the effect after the first render only
 
 
   // call setMenuItems to save the state after
