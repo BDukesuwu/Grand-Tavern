@@ -32,20 +32,7 @@ export function getUser() {
     // get the token
     const token = getToken();
     // return user
-    /*
-    {
-      "user": {
-            "name": "testuser",
-            "email": "testuser@abc.com",
-            "_id": "633b17c566e0c1b670182013",
-            "createdAt": "2022-10-03T17:11:33.376Z",
-            "updatedAt": "2022-10-03T17:11:33.376Z",
-            "__v": 0
-        },
-          "iat": 1664817093,
-          "exp": 1664903493
-        }
-     */
+    
     return token ? JSON.parse(atob(token.split('.')[1])).user : null;
 }
 
