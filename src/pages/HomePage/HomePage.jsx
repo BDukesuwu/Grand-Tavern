@@ -51,14 +51,14 @@ export default function Homepage() {
       <form>
       <h2>Book a table</h2>
     
-      <label for="date">Date</label>
+      <label>Date</label>
       <input type="date" name="Date"/>
     
-      <label for="book">Time</label>
+      <label>Time</label>
       <input type="time" name="book"/>
       <input type="submit"/>
     
-      <label for="book">Party Size</label>
+      <label>Party Size</label>
       <select>
           <option value="1 person">1 person</option>
           <option value="2 people">2 people</option>
