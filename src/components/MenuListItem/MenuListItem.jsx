@@ -1,3 +1,5 @@
+import './MenuListItem.css';
+
 export default function MenuListItem({ menuItem }) {
     return (
       <div className="MenuListItem">
