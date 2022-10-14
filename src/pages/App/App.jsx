@@ -16,12 +16,12 @@ function App() {
     const rootAPIURL = 'https://api.edamam.com/api/recipes/v2?type=public&q=steak&app_id=d64967dc&app_key=a5f9f1786ee37fd224fadf684361a6d3'
     // set the user by calling getUser function
     const [user, setUser] = useState(getUser()); // get user
-    const [recipe, setRecipe] = useState(null);
+    const [menu, setMenu] = useState(null);
 
     const fetchData = async () => {
         fetch(rootAPIURL) //fetch api
         .then(response => response.json()) //turn it into json
-        .then(data => console.log(data.hits)) //display the data
+        .then(data => setMenu(data.hits)) //store the data hits/menu items
         .catch(error => console.log('something went wrong',error))
         .finally(console.log('runs no matter what'))
     };
@@ -46,11 +46,6 @@ function App() {
                 </>
                 :
                 <AuthPage setUser={setUser}/>}
-                
-                <div className="App">
-                    {<img src={recipe}></img>}
-                </div>
-
         </main>
     );
 }
