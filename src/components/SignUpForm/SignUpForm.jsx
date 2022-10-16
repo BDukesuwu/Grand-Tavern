@@ -52,7 +52,7 @@ export default class SignUpForm extends Component {
         return (
             <div>
                 <div className="form-container">
-                <h5>Already have an account? Click above to sign up.</h5>
+                <h5>Already have an account? Click above to log in.</h5>
                 <h2>Please sign up</h2>
 
                     <form autoComplete="off" onSubmit={this.handleSubmit}>
