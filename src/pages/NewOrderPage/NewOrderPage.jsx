@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from 'react'; // import these functions
-import * as itemsAPI from '../../utilities/items.api' //import all functions from here
+import * as itemsAPI from '../../utilities/items-api' //import all functions from here
 import { Link } from 'react-router-dom';
 import MenuList from '../../components/MenuList/MenuList';
-import CategoryList from '../../components/CategoryList/CategoryList';
 
 export default function NewOrderPage() {
   const [menuItems, setMenuItems] = useState([]); //important when using api
   const [activeCat, setActiveCat] = useState('');
+  //create and initialize the ref to
   const categoriesRef = useRef([]); // create and init the red to an empty array
 
   // fetch the menuItems from server via ajax
@@ -33,22 +33,15 @@ export default function NewOrderPage() {
 
   return (
     <>
-    <main className="NewOrderPage">
-      <aside>
-        <CategoryList
-          categories={categoriesRef.current}
-          activeCat={activeCat}
-          setActiveCat={setActiveCat}
+      <main className="NewOrderPage">
+        <aside>
+          <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link>
+        </aside>
+        
+        <MenuList
+          menuItems={menuItems.filter(item => item.category.name === activeCat)}
         />
-        <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link>
-      </aside>
-      <MenuList
-        menuItems={menuItems.filter(item => item.category.name === activeCat)}
-      />
-    </main>
-    
-     <h1>Your Order</h1>
-     <button onClick={() => setMenuItems(Date.now())}> Trigger re-render</button>
+      </main>
     </>
     );
 }

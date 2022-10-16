@@ -7,6 +7,7 @@ export default function MenuList({ menuItems }) {
       menuItem={item}
     />
   );
+  
   return (
     <main className="MenuList">
       {items}
