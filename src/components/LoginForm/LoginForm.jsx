@@ -34,7 +34,8 @@ export default function LoginForm({setUser}) {
     return (
         <div>
             <div className="form-container">
-                <h1>Please Log in</h1>
+                <h5>New to the Tavern? Click above to sign up.</h5>
+                <h2>Please Log in</h2>
 
                 <form autoComplete="off" onSubmit={handleSubmit}>
                     <label>Email</label>
