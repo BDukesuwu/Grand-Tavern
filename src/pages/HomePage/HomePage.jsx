@@ -59,15 +59,14 @@ export default function Homepage() {
       <input type="submit"/>
     
       <label for="partysize" placeholder='party size'/>
-      <select class="form-control">
-        <option value="" disabled selected hidden>Party Size</option>
-        <option>1 person</option>
-        <option>2 people</option>
-        <option>3 people</option>
-        <option>4 people</option>
-        <option>5 people</option>
-    </select>
-
+        <select class="form-control">
+          <option value="" disabled selected hidden>Party Size</option>
+          <option>1 person</option>
+          <option>2 people</option>
+          <option>3 people</option>
+          <option>4 people</option>
+          <option>5 people</option>
+        </select>
       </form>
   </div>
     </>
