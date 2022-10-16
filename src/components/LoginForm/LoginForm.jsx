@@ -40,8 +40,7 @@ export default function LoginForm({setUser}) {
                     <label>Email</label>
                     <input type="text" name="email" placeholder='Enter Email' value={credentials.email} onChange={handleChange} required/>
                     <label>Password</label>
-                    <input type="password" name="password" placeholder='Enter Password' value={credentials.password} onChange={handleChange}
-                           required/>
+                    <input type="password" name="password" placeholder='Enter Password' value={credentials.password} onChange={handleChange} required/>
                     <button type="submit">LOG IN</button>
                 </form>
             </div>
