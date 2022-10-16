@@ -6,7 +6,7 @@ export default function AuthPage({setUser}) {
     const [showSignUp, setShowSignUp] = useState(false);
     return (
         <main>
-            <h1>Please Log In or Sign up</h1>
+            <h1>Welcome to the Grand Tavern</h1>
             <button onClick={() => setShowSignUp(!showSignUp)}>{showSignUp ? 'Log In' : 'Sign Up'}</button>
             {showSignUp ?
                 <SignUpForm setUser={setUser}/>

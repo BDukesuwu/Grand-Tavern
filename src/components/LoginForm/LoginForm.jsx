@@ -34,6 +34,8 @@ export default function LoginForm({setUser}) {
     return (
         <div>
             <div className="form-container">
+                <h1>Please Log in</h1>
+
                 <form autoComplete="off" onSubmit={handleSubmit}>
                     <label>Email</label>
                     <input type="text" name="email" placeholder='Enter Email' value={credentials.email} onChange={handleChange} required/>

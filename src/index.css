@@ -156,6 +156,3 @@ button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
 }
-h1, span, a, p, h2, h3, h4, h5, label {
-  color: white;
-}
