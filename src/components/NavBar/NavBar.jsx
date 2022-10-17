@@ -14,8 +14,8 @@ export default function NavBar({user, setUser}) {
 // setting up the nav bar links and their routes
     return (
         <nav className="list">
-            <span className="items">Welcome, {user.name}</span>
-
+            <span>Welcome, {user.name}</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Link to="/menu" className="items">Menu</Link>
           
             <Link to="/about" className="items">Our Story</Link>
