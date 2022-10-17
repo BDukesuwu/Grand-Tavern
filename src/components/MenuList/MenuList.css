@@ -1,5 +1,6 @@
 .MenuList {
-    background-color: var(--tan-1);
+  background: rgb(247,221,214);
+  background: linear-gradient(180deg, rgba(247,221,214,0.5158438375350141) 27%, rgba(164,137,129,0.4318102240896359) 96%);
     border: .1vmin solid var(--tan-3);
     border-radius: 2vmin;
     margin: 3vmin 0;

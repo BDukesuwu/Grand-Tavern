@@ -1,0 +1,12 @@
+img {
+    width: 15em;
+    height: 15em;
+}
+
+h3 {
+    color: whitesmoke;
+}
+
+.className {
+    display: inline-block !important;
+}
