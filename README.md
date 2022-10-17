@@ -1,9 +1,9 @@
 # Grand Tavern
 
 ## Getting Started!
-### See the App's planning and deployment below!
-|[Deployed App](https://grand-tavern.herokuapp.com//)|[Trello Board](https://trello.com/b/NguAo6pn/restaurant)|
-|---|---|
+### See the App's deployment below!
+|[Deployed App](https://grand-tavern.herokuapp.com//)|
+|---|
 
 ## Technologies Used
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
