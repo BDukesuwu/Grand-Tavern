@@ -53,8 +53,7 @@ export default function Homepage() {
       <form>
         <h2>Book a table</h2>
 
-        <label >Date</label>
-          <input type="date" name="Date"/>
+        <input type="date" name="Date"/>
 
         <label placeholder='party size'/>
           <select className="form-control">
@@ -66,8 +65,7 @@ export default function Homepage() {
             <option>5 people</option>
           </select>
       
-        <label>Time</label>
-          <input type="time" name="book"/>
+          <input type="time" placeholder='time'/>
           <input type="submit"/>
       </form>
   </section>

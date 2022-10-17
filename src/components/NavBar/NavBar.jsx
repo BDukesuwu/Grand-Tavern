@@ -17,14 +17,10 @@ export default function NavBar({user, setUser}) {
             <span>Welcome, {user.name}</span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Link to="/menu" className="items">Menu</Link>
-          
             <Link to="/about" className="items">Our Story</Link>
-  
             <Link to="/orders/new" className="items">Order Page</Link>
-           
             <HashLink smooth to="/#booking" className="items">Book a Table</HashLink>
-          
-            <button onClick={handleLogOut} type="button" className="btn btn-dark">Logout</button>
+            <button onClick={handleLogOut}>Logout</button>
         </nav>
     )
 }
