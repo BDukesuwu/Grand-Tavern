@@ -32,7 +32,7 @@
 - [x] Communicates with the Express backend via AJAX.
 - [x] Implement token-based authentication. Including the ability of a user to sign-up, log in & log out.
 - [x] Implement authorization by restricting CUD data functionality to authenticated users. Also, navigation should respond to the login status of the user.
-- [ ] Consume data from a third-party API.
+- [ ] Consume data from a third-party API. (Fetched, not displayed)
 
 ![GitHub language count](https://img.shields.io/github/languages/count/BDukesuwu/Grand-Tavern)
 ![GitHub top language](https://img.shields.io/github/languages/top/BDukesuwu/Grand-Tavern?color=pink)
