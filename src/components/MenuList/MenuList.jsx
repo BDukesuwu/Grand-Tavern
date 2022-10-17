@@ -5,6 +5,7 @@ export default function MenuList({ menuItems }) {
     <MenuListItem
       key={item._id}
       menuItem={item}
+      handleAddToOrder={handleAddToOrder}
     />
   );
   
