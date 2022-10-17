@@ -21,5 +21,18 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
+## App features
+- [ ]  A working full-stack, single-page application hosted on Heroku.
+- [ ] Incorporate the technologies of the MERN-stack:
+- MongoDB/Mongoose
+- Express
+- React
+- Node
+- [ ] Have a well-styled interactive front-end.
+- [ ] Communicates with the Express backend via AJAX.
+- [ ] Implement token-based authentication. Including the ability of a user to sign-up, log in & log out.
+- [ ] Implement authorization by restricting CUD data functionality to authenticated users. Also, navigation should respond to the login status of the user.
+- [ ] Consume data from a third-party API.
+
 ![GitHub language count](https://img.shields.io/github/languages/count/BDukesuwu/Grand-Tavern)
 ![GitHub top language](https://img.shields.io/github/languages/top/BDukesuwu/Grand-Tavern?color=pink)
