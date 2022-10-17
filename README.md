@@ -1,9 +1,7 @@
 # Grand Tavern
 
-## Getting Started!
-### See the App's deployment below!
-|[Deployed App](https://grand-tavern.herokuapp.com//)|
-|---|
+## Screenshots
+Landing Page
 
 ## Technologies Used
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -21,6 +19,11 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
+## Getting Started!
+### See the App's planning and deployment below!
+|[Deployed App](https://grand-tavern.herokuapp.com//)|[Trello Board](https://trello.com/b/NguAo6pn/restaurant)|
+|---|---|
+
 ## App features
 - [x]  A working full-stack, single-page application hosted on Heroku.
 - [x] Incorporate the technologies of the MERN-stack:
@@ -33,6 +36,19 @@
 - [x] Implement token-based authentication. Including the ability of a user to sign-up, log in & log out.
 - [x] Implement authorization by restricting CUD data functionality to authenticated users. Also, navigation should respond to the login status of the user.
 - [ ] Consume data from a third-party API. (Fetched, not displayed)
+
+## Future Features
+- [ ] Display the data from my API. 
+
+## Wins
+- Utilizing Bootstrap
+- User Authentication
+- Fething API data
+
+## Hurdles
+- Displaying API Data
+- I need more practice with Express.js
+- Displaying Model data instead of API and not understanding how to fix 😞
 
 ![GitHub language count](https://img.shields.io/github/languages/count/BDukesuwu/Grand-Tavern)
 ![GitHub top language](https://img.shields.io/github/languages/top/BDukesuwu/Grand-Tavern?color=pink)
