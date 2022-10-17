@@ -5,31 +5,39 @@ import steakbites from '../../images/steakbites.jpg';
 export default function MenuPage() {
   return (
     <main className="MenuPage">
-      <div>
+      <div className="row">
         <h1>Our Menu</h1>
+      </div>
+
+      <div className="column">
         <img src={steakbites} />
         <h3> Steak Bites</h3>
+      </div>
 
-        <h1>Our Menu</h1>
-        <img src={steakbites} />
-        <h3> Steak Bites</h3>
-        
-
-        <h1>Our Menu</h1>
-        <img src={steakbites} />
-        <h3> Steak Bites</h3>
-        
-
-        <h1>Our Menu</h1>
-        <img src={steakbites} />
-        <h3> Steak Bites</h3>
-        
-
-        <h1>Our Menu</h1>
+      <div className="column">
         <img src={steakbites} />
         <h3> Steak Bites</h3>
       </div>
       
+      <div className="column">
+        <img src={steakbites} />
+        <h3> Steak Bites</h3>
+      </div>
+      
+      <div className="column">
+        <img src={steakbites} />
+        <h3> Steak Bites</h3>
+      </div>
+      
+      <div className="column">
+        <img src={steakbites} />
+        <h3> Steak Bites</h3>
+      </div>
+      
+      <div className="column">
+        <img src={steakbites} />
+        <h3> Steak Bites</h3>
+      </div>
     </main>
   );
 }
