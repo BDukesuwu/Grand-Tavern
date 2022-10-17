@@ -82,11 +82,13 @@ code {
 
 .form-container {
   min-width: 500px;
-  margin: 15em;
+  margin: 0 8em;
   padding: 3vmin;
   background-color: var(--tan-1);
   border: .1vmin solid var(--tan-3);
   border-radius: 1vmin;
+  background: rgb(138,79,63);
+background: linear-gradient(180deg, rgba(138,79,63,1) 17%, rgba(164,137,129,1) 95%);
 }
 
 
@@ -104,6 +106,7 @@ form {
 }
 
 label {
+  color: rgb(7, 7, 7);
   font-size: 2vmin;
   display: flex;
   align-items: center;
@@ -177,5 +180,15 @@ button[type="submit"] {
   }
   button {
     font-size: 1.2em;
+  }
+  .form-container {
+    margin: 0 8e;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  .form-container {
+    margin: 0 auto;
+    max-width: 35vw;
   }
 }
