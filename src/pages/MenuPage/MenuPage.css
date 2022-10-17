@@ -1,10 +1,24 @@
 img {
-    width: 15em;
-    height: 15em;
+  width: 20em;
+  height: 20em;
+    
+  color: pink;
+  border: 10px solid pink;
+  border-image: repeating-linear-gradient( 45deg, #f7ddd6, #f7ddd6 1%, #ab705f 1%, #ab705f 8%) 10;
 }
 
-h3 {
+img:hover {
+  border-image: repeating-linear-gradient( 45deg, #ab705f, #ab705f 1%, #f7ddd6 1%, #f7ddd6 8%) 10;
+  color: purple;
+}
+
+h3, h5 {
     color: whitesmoke;
+}
+
+.MenuPage {
+  background: rgb(247,221,214);
+  background: linear-gradient(180deg, rgba(247,221,214,0.12088585434173671) 11%, rgba(164,137,129,0.2637429971988795) 22%);
 }
 
 .column {
