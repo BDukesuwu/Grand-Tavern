@@ -3,7 +3,8 @@
     display: grid;
     grid-template-columns: 1.6fr 3.5fr 3fr;
     grid-template-rows: 1fr;
-    background-color: var(--white);
+    background: rgb(138,79,63);
+background: linear-gradient(180deg, rgba(138,79,63,0.4234068627450981) 17%, rgba(164,137,129,0.4318102240896359) 62%);
     border-radius: 2vmin;
   }
   
