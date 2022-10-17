@@ -20,7 +20,7 @@ function App() {
     const fetchData = async () => {
         fetch(rootAPIURL) //fetch api
         .then(response => response.json()) //turn it into json
-        .then(data => setRecipes(data.hits)) //store the data hits/menu items
+        .then(data => console.log(data.hits)) //store the data hits/menu items
         .catch(error => console.log('something went wrong', error))
         .finally(console.log('runs no matter what'))
     };
