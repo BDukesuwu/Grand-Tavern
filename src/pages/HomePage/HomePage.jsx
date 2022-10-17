@@ -4,6 +4,7 @@ import steak from '../../images/steak.png';
 import season from '../../images/season.png';
 import nutrition from '../../images/nutrition.png';
 import './HomePage.css'
+import Form from 'react-bootstrap/Form';
 
 export default function Homepage() {
   return (
@@ -51,7 +52,7 @@ export default function Homepage() {
 
     <section id="booking">
       <form>
-        <h2>Book a table</h2>
+        <h3>Book a table</h3>
 
         <input type="date" name="Date"/>
 

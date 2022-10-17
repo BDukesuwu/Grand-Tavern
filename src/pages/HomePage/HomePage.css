@@ -4,7 +4,17 @@ section {
 h2, p{
     color: white;
 }
+h3 {
+    color: #000;
+}
 
+#booking {
+    background-color: bisque;
+    padding: 3em;
+}
 form {
-    margin-left: 100px;
+    padding: 3em;
+}
+input {
+    margin: 3em;
 }
