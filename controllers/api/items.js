@@ -1,14 +1,9 @@
 const Item = require('../../models/item');
 
-module.exports = {
-  index,
-  show
-};
-
 async function index(req, res) {
-  const items = await Item.find({}).sort('name').populate('category').exec();
+  const items = await Item.find({}).sort('name').populate('category').exec(); //add item to category object
   // re-sort based upon the sortOrder of the categories
-  items.sort((a, b) => a.category.sortOrder - b.category.sortOrder);
+  items.sort((a, b) => a.category.sortOrder - b.category.sortOrder); //alphabetical order sort
   res.json(items);
 }
 
@@ -16,3 +11,8 @@ async function show(req, res) {
   const item = await Item.findById(req.params.id);
   res.json(item);
 }
+
+module.exports = {
+  index,
+  show
+};

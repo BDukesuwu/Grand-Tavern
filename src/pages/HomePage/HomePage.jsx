@@ -3,22 +3,24 @@ import chef from '../../images/chef.png';
 import steak from '../../images/steak.png';
 import season from '../../images/season.png';
 import nutrition from '../../images/nutrition.png';
+import './HomePage.css'
 
 export default function Homepage() {
   return (
     <>
-      <h1>Fresh, delicous steak</h1>
+    <section>
+
+      <h1>Fresh, delicious steak</h1>
       <img src={chef} />
 
-    <div>
       <p> Lorem ipsum dolor sit amet,
           consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore
           et dolore magna aliqua.</p>
           <button>Our Menu</button>
-    </div>
+    </section>
 
-    <div>
+    <section>
       <h2> Always Fresh</h2>
       <p> Lorem ipsum dolor sit amet,
           consectetur adipiscing elit,
@@ -27,48 +29,48 @@ export default function Homepage() {
           sed odio morbi quis.</p>
           <button>Our Story</button>
           <img src={season} />
-    </div>
+    </section>
 
-    <div>
+    <section>
         <h2>Steak Special Menu!</h2>
         <p> Lorem ipsum dolor sit amet,
             consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore
             et dolore magna aliqua.</p>
             <img src={steak} />
-    </div>
+    </section>
 
-    <div>
+    <section>
         <h2>Nutrition</h2>
         <p> Lorem ipsum dolor sit amet,
             consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore
             et dolore magna aliqua.</p>
             <img src={nutrition} />
-    </div>
+    </section>
 
-    <div id="booking">
+    <section id="booking">
       <form>
-      <h2>Book a table</h2>
-    
-      <label>Date</label>
-      <input type="date" name="Date"/>
-    
-      <label>Time</label>
-      <input type="time" name="book"/>
-      <input type="submit"/>
-    
-      <label for="partysize" placeholder='party size'/>
-        <select class="form-control">
-          <option value="" disabled selected hidden>Party Size</option>
-          <option>1 person</option>
-          <option>2 people</option>
-          <option>3 people</option>
-          <option>4 people</option>
-          <option>5 people</option>
-        </select>
+        <h2>Book a table</h2>
+
+        <label >Date</label>
+          <input type="date" name="Date"/>
+
+        <label placeholder='party size'/>
+          <select className="form-control">
+            <option value="partysize" disabled selected hidden>Party Size</option>
+            <option>1 person</option>
+            <option>2 people</option>
+            <option>3 people</option>
+            <option>4 people</option>
+            <option>5 people</option>
+          </select>
+      
+        <label>Time</label>
+          <input type="time" name="book"/>
+          <input type="submit"/>
       </form>
-  </div>
+  </section>
     </>
   );
 }
