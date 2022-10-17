@@ -34,7 +34,7 @@ Landing Page
 - Express
 - React
 - Node
-- [ ] Have a well-styled interactive front-end.
+- [x] Have a well-styled interactive front-end.
 - [x] Communicates with the Express backend via AJAX.
 - [x] Implement token-based authentication. Including the ability of a user to sign-up, log in & log out.
 - [x] Implement authorization by restricting CUD data functionality to authenticated users. Also, navigation should respond to the login status of the user.
