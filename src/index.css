@@ -85,10 +85,10 @@ code {
   margin: 0 8em;
   padding: 3vmin;
   background-color: var(--tan-1);
-  border: .1vmin solid var(--tan-3);
+  border: .1vmin solid rgb(65, 61, 61);
   border-radius: 1vmin;
   background: rgb(138,79,63);
-background: linear-gradient(180deg, rgba(138,79,63,1) 17%, rgba(164,137,129,1) 95%);
+  background: linear-gradient(180deg, rgba(138,79,63,0.6558998599439776) 17%, rgba(164,137,129,0.6558998599439776) 62%);
 }
 
 
@@ -186,9 +186,12 @@ button[type="submit"] {
   }
 }
 
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 840px) {
   .form-container {
     margin: 0 auto;
     max-width: 35vw;
+  }
+  h2 {
+    font-size: 2.1em;
   }
 }
