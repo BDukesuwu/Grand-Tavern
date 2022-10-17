@@ -1,7 +1,7 @@
 # Grand Tavern
 ![steahouse](https://user-images.githubusercontent.com/65559249/196146861-f00c9fe8-7254-484d-bf3c-f1bddcbf4b61.gif)
 
-## A Restauraunt app
+## A Restauraunt app caterning toward steak enjoyers who enjoy a formal setting
 ![cut](https://user-images.githubusercontent.com/65559249/196288781-e3287c90-9913-4764-82ff-f16c3341c8f1.gif)
 
 ## Screenshots
