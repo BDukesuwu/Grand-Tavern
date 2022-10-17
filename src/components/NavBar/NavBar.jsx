@@ -1,26 +1,29 @@
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
 import { HashLink } from 'react-router-hash-link';
+import './NavBar.css';
 
 export default function NavBar({user, setUser}) {
 
     function handleLogOut(){
         userService.logOut();
         setUser(null);
+        
     }
 // setting up the nav bar links and their routes
     return (
-        <nav justify variant="tabs" >
-            <span>Welcome, {user.name}</span>
-                &nbsp; | &nbsp;
-            <Link to="/menu">Menu</Link>
-                &nbsp; | &nbsp;
-            <Link to="/about">Our Story</Link>
-                &nbsp; | &nbsp;
-            <Link to="/orders/new">Order Page</Link>
-                &nbsp; | &nbsp;
-            <HashLink smooth to="/#booking">Book a Table</HashLink>
-                &nbsp; | &nbsp;
+        <nav className="list">
+            <span className="items">Welcome, {user.name}</span>
+
+            <Link to="/menu" className="items">Menu</Link>
+          
+            <Link to="/about" className="items">Our Story</Link>
+  
+            <Link to="/orders/new" className="items">Order Page</Link>
+           
+            <HashLink smooth to="/#booking" className="items">Book a Table</HashLink>
+          
             <button onClick={handleLogOut} type="button" className="btn btn-dark">Logout</button>
         </nav>
     )
