@@ -7,7 +7,6 @@ import HomePage from '../HomePage/HomePage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import MenuPage from '../MenuPage/MenuPage';
 import AboutPage from '../AboutPage/AboutPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import {Routes, Route} from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
 import {getUser} from '../../utilities/users-service';
@@ -30,11 +29,6 @@ function App() {
         fetchData();
     }, []); //to render only once
 
-    <div>
-        <h1> {setRecipes} </h1>
-    </div>
-
-
     return (
         < main className="App">
             {user ?
@@ -46,7 +40,6 @@ function App() {
                         <Route path="/about" element={<AboutPage/>}/>
                         <Route path="/orders/new" element={<NewOrderPage/>}/>
                         <Route path="/book" element={<HomePage />}/>
-                        <Route path="/orders" element={<OrderHistoryPage/>}/>
                     </Routes>
                 </>
                 :
