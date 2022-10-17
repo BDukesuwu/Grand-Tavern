@@ -5,9 +5,6 @@
 |[Deployed App](https://grand-tavern.herokuapp.com//)|[Trello Board](https://trello.com/b/NguAo6pn/restaurant)|
 |---|---|
 
-![GitHub language count](https://img.shields.io/github/languages/count/BDukesuwu/Grand-Tavern)
-![GitHub top language](https://img.shields.io/github/languages/top/BDukesuwu/Grand-Tavern?color=pink)
-
 # Technologies Used
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -23,3 +20,6 @@
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+![GitHub language count](https://img.shields.io/github/languages/count/BDukesuwu/Grand-Tavern)
+![GitHub top language](https://img.shields.io/github/languages/top/BDukesuwu/Grand-Tavern?color=pink)
