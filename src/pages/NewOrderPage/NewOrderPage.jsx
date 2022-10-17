@@ -35,6 +35,8 @@ export default function NewOrderPage() {
     <>
       <main className="NewOrderPage">
         
+      <h1> Order Page</h1>
+
         <MenuList
           menuItems={menuItems.filter(item => item.category.name === activeCat)}
         />
