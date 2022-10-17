@@ -1,9 +1,15 @@
 # Grand Tavern
 ![steahouse](https://user-images.githubusercontent.com/65559249/196146861-f00c9fe8-7254-484d-bf3c-f1bddcbf4b61.gif)
 
+## A Restauraunt app
+![cut](https://user-images.githubusercontent.com/65559249/196288781-e3287c90-9913-4764-82ff-f16c3341c8f1.gif)
+
 ## Screenshots
 Landing Page
 ![steakauth](https://user-images.githubusercontent.com/65559249/196250552-3d665ce0-534a-4bdb-95ee-281db43f775f.PNG)
+
+Menu Page
+![menu](https://user-images.githubusercontent.com/65559249/196288547-f23f0d8e-7933-407c-a731-057627763740.PNG)
 
 
 ## Technologies Used
