@@ -13,6 +13,7 @@ export default function AboutPage() {
       New prepared strength plates of mixed greens, delectable mashed or baked potatos, and more.
       The Grand Tavern's delectably rich cream cheddar potatos are prevalent top choices with our visitors.
       </p>
+      
     </section>
 
     <section>

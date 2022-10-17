@@ -15,7 +15,7 @@ function App() {
     const rootAPIURL = 'https://api.edamam.com/api/recipes/v2?type=public&q=steak&app_id=d64967dc&app_key=a5f9f1786ee37fd224fadf684361a6d3'
     // set the user by calling getUser function
     const [user, setUser] = useState(getUser()); // get user
-    const [recipes, setRecipes] = useState(null); //by default there will be null recipes
+    const [recipe, setRecipes] = useState(null); //by default there will be null recipes
 
     const fetchData = async () => {
         fetch(rootAPIURL) //fetch api
